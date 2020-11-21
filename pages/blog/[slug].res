@@ -28,7 +28,7 @@ let default = (props: props) => {
           {React.string("traduzido por " ++ data.translatedBy)}
         </p>
       </div>
-      <ReactMarkdown source=content />
+      <main className="article__content"> <ReactMarkdown source=content /> </main>
     </article>
   </Layout>
 }

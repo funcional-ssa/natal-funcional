@@ -9,8 +9,22 @@
     color: white;
   }
 
+  p {
+    font-size: 1.25rem;
+    line-height: 1.45;
+    font-weight: lighter;
+  }
+
   &__header {
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     text-align: center;
+  }
+
+  &__content {
+    max-width: 760px;
+    margin: auto;
+    > * {
+      margin-right: auto;
+    }
   }
 }
