@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import "./article.scss";
+@import "./navbar.scss";
 
 :root {
   --background: #000000;
   --primary: #017ec3;
+  --light-blue: #0193e2;
 }
 
 body {
@@ -35,4 +38,15 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-template-rows: auto;
   gap: 16px;
+}
+
+a {
+  text-decoration: none;
+
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover {
+    color: var(--light-blue);
+    scale: 1.1;
+  }
 }

@@ -1,0 +1,16 @@
+.article {
+  padding: 1.2rem;
+  margin: auto;
+  max-width: 1366px;
+
+  p,
+  em,
+  li {
+    color: white;
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}

@@ -18,13 +18,18 @@ type props = {
 let default = (props: props) => {
   let {data, content} = props
 
-  <Layout>
-    <div>
-      <h1> {data.title->React.string} </h1>
-      <p> {React.string("escrito por " ++ data.author)} </p>
-      <p> {React.string("traduzido por " ++ data.translatedBy)} </p>
-    </div>
-    <ReactMarkdown source=content />
+  <Layout title=data.title description=content>
+    <Navbar />
+    <article className="article">
+      <div className="article__header">
+        <h1 className="article__title"> {data.title->React.string} </h1>
+        <p className="article__author"> {React.string("escrito por " ++ data.author)} </p>
+        <p className="article__translator">
+          {React.string("traduzido por " ++ data.translatedBy)}
+        </p>
+      </div>
+      <ReactMarkdown source=content />
+    </article>
   </Layout>
 }
 
