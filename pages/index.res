@@ -5,15 +5,16 @@ type postData = {title: string, published: bool}
 type props = {posts: array<string>}
 
 let default = (props: props) => {
-  Js.log(props)
-
   <Layout>
     <main>
       <Next.Image src="/logo.png" quality={100} height={340} width={340} />
-      <h1> {React.string("Natal funcional!")} </h1>
-      <div className="article-list"> {props.posts->Belt.Array.map(title => {
-          <article> <h2> {React.string(title)} </h2> </article>
-        })->React.array} </div>
+      <h1> {React.string("Natal Funcional")} </h1>
+      {switch props.posts {
+      | [] => <h2> {React.string("Em breve...")} </h2>
+      | posts => <div className="article-list"> {posts->Belt.Array.map(title => {
+            <article> <h2> {React.string(title)} </h2> </article>
+          })->React.array} </div>
+      }}
     </main>
   </Layout>
 }
