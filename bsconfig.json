@@ -14,7 +14,7 @@
       "subdirs": true
     }
   ],
-  "bs-dependencies": ["reason-react"],
+  "bs-dependencies": ["reason-react", "reason-promise"],
   "reason": { "react-jsx": 3 },
   "package-specs": {
     "module": "es6",
