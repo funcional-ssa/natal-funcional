@@ -9,6 +9,7 @@ let make = (~children, ~title=?, ~description=?) => {
         {React.string(title)}
       </title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta property="og:site_name" content="Funcional Salvador" />
       <meta property="og:title" content=title />
       <meta
         property="og:description"
