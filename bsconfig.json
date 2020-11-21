@@ -12,6 +12,9 @@
     {
       "dir": "bindings",
       "subdirs": true
+    },
+    {
+      "dir": "utils"
     }
   ],
   "bs-dependencies": ["reason-react", "reason-promise"],
