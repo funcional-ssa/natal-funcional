@@ -1,13 +1,10 @@
 @react.component
 let make = (~children, ~title=?, ~description=?) => {
-  let title = Belt.Option.getWithDefault(title, "Natal Funcional");
+  let title = Belt.Option.getWithDefault(title, "Natal Funcional")
 
-  @JSX
-  list{
+  <>
     <Next.Head>
-      <title>
-        {React.string(title)}
-      </title>
+      <title> {React.string(title)} </title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta property="og:site_name" content="Funcional Salvador" />
       <meta property="og:title" content=title />
@@ -19,7 +16,7 @@ let make = (~children, ~title=?, ~description=?) => {
         )}
       />
       <meta property="og:image" content="/logo.png" />
-    </Next.Head>,
-    {children},
-  }
+    </Next.Head>
+    {children}
+  </>
 }
