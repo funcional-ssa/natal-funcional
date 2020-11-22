@@ -15,7 +15,7 @@ let make = (~children, ~title=?, ~description=?) => {
           j`Olá, nós somos a Funcional Salvador e vamos trazer diversos conteúdos sobre programação funcional para vocês durante o mês de dezembro. Interessado? Cola com a gente no nosso canal do Telegram! ;)`,
         )}
       />
-      <meta property="og:image" content="/logo.png" />
+      <meta property="og:image" content="https://natal.fpssa.com.br/logo.png" />
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       <link rel="icon" type_="image/png" sizes="32x32" href="/favicon-32x32.png" />
       <link rel="icon" type_="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -25,7 +25,7 @@ let make = (~children, ~title=?, ~description=?) => {
       <meta name="theme-color" content="#ffffff" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@fp_ssa" />
-      <meta name="twitter:image" content="/logo.png" />
+      <meta name="twitter:image" content="https://natal.fpssa.com.br/logo.png" />
     </Next.Head>
     {children}
   </React.Fragment>
