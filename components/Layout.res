@@ -2,7 +2,7 @@
 let make = (~children, ~title=?, ~description=?) => {
   let title = Belt.Option.getWithDefault(title, "Natal Funcional")
 
-  <>
+  <React.Fragment>
     <Next.Head>
       <title> {React.string(title)} </title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -16,16 +16,16 @@ let make = (~children, ~title=?, ~description=?) => {
         )}
       />
       <meta property="og:image" content="/logo.png" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-      <link rel="icon" type_="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-      <link rel="icon" type_="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-      <link rel="manifest" href="/site.webmanifest"/>
-      <link rel="mask-icon" href="/safari-pinned-tab.svg"/>
-      <meta name="msapplication-TileColor" content="#da532c"/>
-      <meta name="theme-color" content="#ffffff"/>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type_="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type_="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" />
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="theme-color" content="#ffffff" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@fp_ssa" />
     </Next.Head>
     {children}
-  </meta>
+  </React.Fragment>
 }
