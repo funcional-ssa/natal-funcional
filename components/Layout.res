@@ -25,6 +25,7 @@ let make = (~children, ~title=?, ~description=?) => {
       <meta name="theme-color" content="#ffffff" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@fp_ssa" />
+      <meta name="twitter:image" content="/logo.png" />
     </Next.Head>
     {children}
   </React.Fragment>
