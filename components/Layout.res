@@ -23,7 +23,9 @@ let make = (~children, ~title=?, ~description=?) => {
       <link rel="mask-icon" href="/safari-pinned-tab.svg"/>
       <meta name="msapplication-TileColor" content="#da532c"/>
       <meta name="theme-color" content="#ffffff"/>
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@fp_ssa" />
     </Next.Head>
     {children}
-  </>
+  </meta>
 }
