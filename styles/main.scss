@@ -59,3 +59,9 @@ h1 {
   color: white;
   font-size: 2rem;
 }
+
+@media only screen and (max-width: 900px) {
+  .article-list__item {
+    font-size: 1.2rem;
+  }
+}
