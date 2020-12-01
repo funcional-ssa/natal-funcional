@@ -1,6 +1,7 @@
 const withTM = require("next-transpile-modules")([
   "bs-platform",
   "reason-promise",
+  "react-syntax-highlighter"
 ]);
 
 

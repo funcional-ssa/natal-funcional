@@ -29,7 +29,7 @@ let default = (props: props) => {
         </p>
         <p> {React.string("publicado em: " ++ data.date)} </p>
       </div>
-      <main className="article__content"> <ReactMarkdown source=content /> </main>
+      <main className="article__content"> <Markdown> content </Markdown> </main>
     </article>
   </Layout>
 }
