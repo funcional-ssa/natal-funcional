@@ -27,6 +27,7 @@ let default = (props: props) => {
         <p className="article__translator">
           {React.string("traduzido por " ++ data.translatedBy)}
         </p>
+        <p> {React.string("publicado em: " ++ data.date)} </p>
       </div>
       <main className="article__content"> <ReactMarkdown source=content /> </main>
     </article>

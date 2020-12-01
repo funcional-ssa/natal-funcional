@@ -8,8 +8,11 @@ let make = () => {
       <Next.Link href="/about">
         <a className="navbar__link"> {React.string(j`Sobre nós`)} </a>
       </Next.Link>
-      <a className="navbar__link" href="https://functional.christmas/">
+      <a className="navbar__link" href="https://functional.christmas/2019">
         {React.string("Visite o blog original")}
+      </a>
+      <a className="navbar__link" href="https://functional.christmas/2020">
+        {React.string(j`...ou sua versão de 2020`)}
       </a>
     </div>
   </nav>

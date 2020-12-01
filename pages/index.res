@@ -9,11 +9,20 @@ let default = (props: props) => {
     <main>
       <Next.Image src="/logo.svg" quality={100} height={340} width={340} />
       <h1> {React.string("Natal Funcional")} </h1>
+      <a href="/about"> {j`Sobre nós`->React.string} </a>
       {switch props.posts {
       | [] => <h2> {React.string("Em breve...")} </h2>
-      | posts => <div className="article-list"> {posts->Belt.Array.map(title => {
-            <article> <h2> {React.string(title)} </h2> </article>
-          })->React.array} </div>
+      | posts => <ol className="article-list"> {posts->Belt.Array.mapWithIndex((index, title) => {
+            <Next.Link href={"/blog/" ++ string_of_int(index + 1)} key=title>
+              <a>
+                <li>
+                  <article>
+                    <h2 className="article-list__item"> {React.string(title)} </h2>
+                  </article>
+                </li>
+              </a>
+            </Next.Link>
+          })->React.array} </ol>
       }}
     </main>
   </Layout>
