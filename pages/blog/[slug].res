@@ -7,6 +7,7 @@ type postData = {
   author: string,
   translatedBy: string,
   date: string,
+  description: string,
 }
 
 type props = {
@@ -18,7 +19,7 @@ type props = {
 let default = (props: props) => {
   let {data, content} = props
 
-  <Layout title=data.title description=content>
+  <Layout title=data.title description=data.description>
     <Navbar />
     <article className="article">
       <div className="article__header">
