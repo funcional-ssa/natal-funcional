@@ -7,7 +7,7 @@ type props = {posts: array<string>}
 let default = (props: props) => {
   <Layout>
     <main>
-      <Next.Image src="/logo.svg" quality={100} height={340} width={340} />
+      <Next.Image src="/logo.svg" quality={100} height={200} width={200} />
       <h1> {React.string("Natal Funcional")} </h1>
       <Next.Link href="/about"> <a> {j`Sobre nós`->React.string} </a> </Next.Link>
       {switch props.posts {
