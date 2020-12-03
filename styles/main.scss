@@ -66,6 +66,13 @@ h1 {
   font-size: 2rem;
 }
 
+pre {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: scroll;
+  align-self: flex-start;
+}
+
 @media only screen and (max-width: 900px) {
   .article-list__item {
     font-size: 1.2rem;
