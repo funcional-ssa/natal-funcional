@@ -73,6 +73,10 @@ pre {
   align-self: flex-start;
 }
 
+img {
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 900px) {
   .article-list__item {
     font-size: 1.2rem;
