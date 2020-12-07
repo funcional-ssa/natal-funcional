@@ -17,6 +17,12 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+pre, code {
+  & > * {
+    font-family: Inconsolata, Monaco, Consolas, "Courier New", Courier, monospace !important;
+  }
+}
+
 h1,
 h2,
 h3,
