@@ -17,7 +17,7 @@
       "dir": "utils"
     }
   ],
-  "bs-dependencies": ["reason-react", "reason-promise"],
+  "bs-dependencies": ["@rescript/react", "reason-promise"],
   "reason": { "react-jsx": 3 },
   "package-specs": {
     "module": "es6",

@@ -10,6 +10,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@rescript/react": "^0.10.1",
     "@zeit/next-css": "^1.0.1",
     "gray-matter": "^4.0.2",
     "next": "latest",
@@ -20,7 +21,6 @@
     "react-markdown": "^4.3.1",
     "react-syntax-highlighter": "^15.3.1",
     "reason-promise": "^1.1.2",
-    "reason-react": "^0.9.1",
     "sass": "^1.29.0"
   },
   "devDependencies": {
